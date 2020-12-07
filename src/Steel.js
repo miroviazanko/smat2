@@ -1,3 +1,4 @@
+import React, {useEffect} from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
@@ -10,8 +11,11 @@ import Main from './components/main/Main';
 import OurServices from './components/ourservices/OurServices';
 import Contact from './components/contact/Contact';
 
-export default function Steel() {
+export default function Steel(props) {
+
+
     return (
+
         <>
             <Logo />
 
@@ -48,7 +52,7 @@ export default function Steel() {
 
                                                 <Switch location={location}>
 
-                                                    <Route path="/" exact
+                                                    <Route path="/Main" exact
                                                         component={Main} />
                                                     <Route path="/services"
                                                         component={OurServices} />

@@ -71,15 +71,7 @@
 
 
 @keyframes fromBottom {
-    0% { margin-top: 5%; opacity: 0;}
-    100% {
-        margin-top: 0%;
-        opacity: 1;
-    }
-}
-
-@keyframes fromBottomSlow {
-    0% { margin-top: 5%; opacity: 0;}
+    0% { margin-top: 2%; opacity: 0;}
     100% {
         margin-top: 0%;
         opacity: 1;
