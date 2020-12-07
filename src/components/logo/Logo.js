@@ -7,8 +7,10 @@ export default function Logo() {
     return(
         <div className={s.logoContainer}>
 
-            <img src={logo300} alt="logo strojarska vyroba, konstrukcia" className={s.logoNoHand} />
-            <img src={hand} alt="logo strojarska vyroba, konstrukcia" className={s.hand} />
+                <div className={s.logoSmallContainer}>
+                    <img src={logo300} alt="logo strojarska vyroba, konstrukcia" className={s.logoNoHand} />
+                <img src={hand} alt="logo strojarska vyroba, konstrukcia" className={s.hand} />
+            </div>
 
         </div>
     )

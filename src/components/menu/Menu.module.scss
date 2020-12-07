@@ -1,0 +1,47 @@
+$menu-font: 'Raleway', sans-serif;
+$menu-color: #5982bc;
+
+.menuContainer {
+    display: inline-block;
+    margin-left: 25%;
+    width: 40vw;
+    text-align: center;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    transform: skewX(-20deg);
+    padding: 4em 0;
+    width: 33%;
+}
+
+.list li:nth-child(odd) {
+    border-left: 1px solid #b6b7b9;
+    border-right: 1px solid #b6b7b9;
+}
+
+
+.list a {
+    display: inline-block;
+    transform: skewX(20deg);
+    font: {
+        family: $menu-font;
+        weight: bold;
+    }
+    color: $menu-color;
+    transition: all .5s ease;
+}
+
+.list a:hover {
+    color: #2f4564;;
+}
+
+.main, .ourservice, .contact {
+    display: inline-block;
+}
+
+

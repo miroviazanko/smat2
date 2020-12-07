@@ -7,7 +7,10 @@ html {
 }
 *, *::before, *::after {
 	box-sizing: inherit;
+	text-decoration: none;
+	list-style: none;
 }
+
 img {
 	max-width: 100%;
 	height: auto;

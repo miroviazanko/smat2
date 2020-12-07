@@ -1,12 +1,16 @@
 .logoContainer {
-    position: relative;
     width: 300px;
+    display: inline-block;
+}
+
+.logoSmallContainer {
+    position: relative;
 }
 
 .hand {
     position: absolute;
-    left: 21%;
-    animation: turnHand 40s linear 3s;
+    left: 18%;
+    animation: turnHand 40s linear 3s infinite;
     transform-origin: 125% 50%;
     z-index: -1;
 }
@@ -16,6 +20,6 @@
 @keyframes turnHand {
     0% {transform: rotateZ(0deg)}
     20% {transform: rotateZ(-180deg)}
-    80% {transform: rotateZ(-180deg)}
-    100% {transform: rotateZ(0deg)}
+    50% {transform: rotateZ(-180deg)}
+    70% {transform: rotateZ(0deg)}
 }
