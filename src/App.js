@@ -12,16 +12,14 @@ import Rubber from './Rubber';
 
 function App() {
 
-  const [isHash, setIsHash] = useState(-1)
-
-  const hash = window.location.href.indexOf('#');
+  const [isHash, setIsHash] = useState()
 
 
   useEffect(() => {
     const hash = window.location.href.indexOf('#');
     setIsHash(hash)
     console.log('render');
-  });
+  },[isHash]);
 
 
   const handleOptionClick = (data) => {
@@ -30,6 +28,9 @@ function App() {
     console.log('rend', hash);
   }
 
+  const unMountedComp = (data) => {
+    setIsHash(data)
+  }
 
 
   return (
@@ -40,11 +41,12 @@ function App() {
       <Switch>
 
         <Route path="/konstrukcie"
-               component={Steel}
+               component={ () => <Steel unMount={ (data) => unMountedComp() } /> }
                />
 
         <Route path="/guma"
-               component={Rubber} />
+               component={ () => <Rubber unMount={ (data) => unMountedComp() } /> }
+               />
 
       </Switch>
 

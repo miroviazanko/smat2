@@ -15,12 +15,6 @@ import { RiArrowRightSFill, RiArrowLeftSFill } from 'react-icons/ri';
 
 export default function Intro(props) {
 
-    useEffect(() => {
-        return () => {
-            props.onClick('hola')
-        }
-    }, [])
-
     return (
         <div className={s.introContainer}>
             <h1>SMAT s.r.o.</h1>
@@ -50,7 +44,7 @@ export default function Intro(props) {
             </div>
 
             <div className={s.optionContainer2}
-                 >
+                 onClick={props.onClick}>
                 <NavLink to="/guma">
                     <h2>Výroba produktov z gumy</h2>
                     <div className={s.imageSmat2}>

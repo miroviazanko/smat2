@@ -13,8 +13,16 @@ import Contact from './components/contact/Contact';
 
 export default function Steel(props) {
 
+    useEffect(() => {
+        return () => {
+            props.unMount(-1)
+        }
+    })
+
+
 
     return (
+
 
         <>
             <Logo />
