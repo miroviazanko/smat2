@@ -10,7 +10,7 @@ import reportWebVitals from './reportWebVitals';
 
 
 ReactDOM.render(
-  <HashRouter hashType="noslash">
+  <HashRouter>
     <React.StrictMode>
       <App />
     </React.StrictMode>

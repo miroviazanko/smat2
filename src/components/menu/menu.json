@@ -3,19 +3,19 @@
         {
             "name": "Hlavná stránka",
             "classMenu": "main",
-            "to": "main",
+            "to": "/konstrukcie/",
             "component": "Main"
         },
         {
             "name": "Naše Služby",
             "classMenu": "ourservice",
-            "to": "services",
+            "to": "/konstrukcie/services",
             "component": "OurServices"
         },
         {
             "name": "Kontakt",
             "classMenu": "contact",
-            "to": "contact",
+            "to": "/konstrukcie/contact",
             "component": "Contact"
         }
     ]

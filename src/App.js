@@ -16,16 +16,14 @@ function App() {
 
 
   useEffect(() => {
-    const hash = window.location.href.indexOf('#');
+    const hash = window.location.href.indexOf('konstrukcie');
     setIsHash(hash)
-    console.log('render');
   },[isHash]);
 
 
   const handleOptionClick = (data) => {
     const hash = window.location.href.indexOf('#');
     setIsHash(hash)
-    console.log('rend', hash);
   }
 
   const unMountedComp = (data) => {
