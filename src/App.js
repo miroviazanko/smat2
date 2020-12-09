@@ -20,14 +20,12 @@ function App() {
   useEffect(() => {
     const hash = window.location.href.indexOf('#');
     setIsHash(hash)
-    console.log(isHash);
-
-  }, [hash]);
+    console.log('render');
+  });
 
 
   const handleOptionClick = (data) => {
     const hash = window.location.href.indexOf('#');
-
     setIsHash(hash)
     console.log('rend', hash);
   }
@@ -43,7 +41,6 @@ function App() {
 
         <Route path="/konstrukcie"
                component={Steel}
-
                />
 
         <Route path="/guma"
