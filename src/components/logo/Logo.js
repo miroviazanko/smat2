@@ -1,16 +1,19 @@
+import {Link} from 'react-router-dom';
+
 import s from './Logo.module.scss';
 
-import logo300 from '../../assets/logo/logo300-nohand.png';
-import hand from '../../assets/logo/hand300-exp.png';
+import logoKonstr from '../../assets/logo/logo-modre-konstr.jpg';
 
 export default function Logo() {
     return(
         <div className={s.logoContainer}>
 
+            <Link to="/">
                 <div className={s.logoSmallContainer}>
-                    <img src={logo300} alt="logo strojarska vyroba, konstrukcia" className={s.logoNoHand} />
-                <img src={hand} alt="logo strojarska vyroba, konstrukcia" className={s.hand} />
-            </div>
+                    <img src={logoKonstr} alt="logo strojarska vyroba, konstrukcia" className={s.logoNoHand} />
+
+                </div>
+            </Link>
 
         </div>
     )

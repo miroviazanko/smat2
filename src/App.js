@@ -36,17 +36,22 @@ function App() {
 
       { isHash === -1 ? <Intro onClick={ () => handleOptionClick()}/> : null }
 
-      <Switch>
 
-        <Route path="/konstrukcie"
-               component={ () => <Steel unMount={ (data) => unMountedComp() } /> }
-               />
 
-        <Route path="/guma"
-               component={ () => <Rubber unMount={ (data) => unMountedComp() } /> }
-               />
+            <Switch>
 
-      </Switch>
+                <Route path="/konstrukcie"
+                      component={ () => <Steel unMount={ () => unMountedComp() } /> }
+                    />
+
+
+                <Route path="/guma"
+                      component={ () => <Rubber unMount={ () => unMountedComp() } /> }
+                    />
+
+            </Switch>
+
+
 
     </div>
   );

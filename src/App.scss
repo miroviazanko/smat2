@@ -1,6 +1,8 @@
 $font-header: 'Raleway', sans-serif;
 $color-header: #ffffff;
-$font-text: 'Yantramanav', sans-serif;
+$font-text: 'Quicksand', sans-serif;
+$color-text: #5d6877;
+
 
 
 h1 {
@@ -29,9 +31,9 @@ h3 {
 p {
   font: {
     family: $font-text;
-    size: 1.3em;
+    size: 1.5em;
   }
-  color: #7e8186;
+  color: $color-text;
   text-align: justify;
 }
 

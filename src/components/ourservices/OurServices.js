@@ -4,8 +4,8 @@ import s from './OurServices';
 
 export default function OurServices() {
     return (
-        <div>
-            Sluzby
+        <div className='sectionContainer'>
+            <p>Sluzby</p>
         </div>
     )
 }

@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-import s from './Steel.module.scss';
+//import s from './Steel.module.scss';
 
 import Logo from './components/logo/Logo';
 import Menu from './components/menu/Menu';
@@ -22,9 +22,14 @@ export default function Steel(props) {
         }
     })
 
+    /*
+    const loc = useLocation()
+    console.log(loc.pathname.split('/')[2])
+    */
+
     return (
 
-        <div className={s.steelContainer}>
+        <>
             <Logo />
 
             <Route render={({ location }) => (
@@ -37,12 +42,13 @@ export default function Steel(props) {
                             <CSSTransition
                                 timeout={1000}
                                 classNames='fade'
-                                key={location.pathname.split('/')[1]}>
+                                key={location.pathname.split('/').join()}
+                            >
 
 
                             <Switch location={location}>
 
-                                <Route path="/konstrukcie/" exact
+                                <Route path="/konstrukcie" exact
                                        component={Main} />
                                 <Route path="/konstrukcie/services"
                                        component={OurServices} />
@@ -58,7 +64,7 @@ export default function Steel(props) {
                 </>
 
             )} />
-        </div>
+        </>
 
     )
 }

@@ -3,7 +3,7 @@
         {
             "name": "Hlavná stránka",
             "classMenu": "main",
-            "to": "/konstrukcie/",
+            "to": "/konstrukcie",
             "component": "Main"
         },
         {
