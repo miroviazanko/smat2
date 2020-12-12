@@ -10,7 +10,7 @@ import Introduction from './components/introduction/Introduction';
 import Main from './components/main/Main';
 import OurServices from './components/ourservices/OurServices';
 import Contact from './components/contact/Contact';
-
+import Footer from './components/footer/Footer';
 
 
 
@@ -64,6 +64,9 @@ export default function Steel(props) {
                 </>
 
             )} />
+
+            <Footer />
+
         </>
 
     )

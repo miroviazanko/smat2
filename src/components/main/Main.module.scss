@@ -10,6 +10,7 @@
 
 .toolContainer {
     text-align: right;
+    margin-bottom: 7em;
 }
 
 .toolImg, .toolText {
@@ -18,10 +19,13 @@
 .toolImg {
     margin-right: 1.5em;
 }
+.toolText {
+    width: 90%;
+}
 
 .section2 {
-    margin: 7em -14%;
-    position: relative;
+    margin: 0 -14%;
+
     p {
         display: inline-block;
         margin: 0 3em;
@@ -70,6 +74,9 @@
     margin-top: -2px;
 }
 
+.aboutText {
+    margin-top: 5em;
+}
 
 
 

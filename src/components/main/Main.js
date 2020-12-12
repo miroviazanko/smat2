@@ -18,14 +18,9 @@ export default function Main() {
     const photoSection1 = useRef();
     const photoSection2 = useRef();
 
-
     const observerCallback = entries => {
 
-
-
-        const whichElement = entries[0].target.className.search("explainPhoto1");
-
-        console.log(entries[0].isIntersecting, whichElement);
+        /*const whichElement = entries[0].target.className.search("explainPhoto1");
 
         if (whichElement !== -1 && entries[0].isIntersecting) {
             setAnimate1(true)
@@ -34,25 +29,52 @@ export default function Main() {
             setAnimate2(true)
         }
 
+        console.log(entries[0].isIntersecting);*/
+
+        if (entries[0].isIntersecting) {
+            setAnimate1(true)
+        }
     }
 
-    let options = {
-        threshold: 0.75
+    const observerCallback2 = entries => {
+        if (entries[0].isIntersecting) {
+            setAnimate2(true)
+        }
     }
 
-    let observer = new IntersectionObserver(observerCallback, options);
 
 
     useEffect( () => {
-        observer.observe(photoSection1.current);
-        observer.observe(photoSection2.current);
+
+        const first = photoSection1.current;
+        const second = photoSection2.current;
+
+        const observer = new IntersectionObserver(observerCallback, {
+            root: null,
+            threshold: 0.75
+        });
+        const observer2 = new IntersectionObserver(observerCallback2, {
+            root: null,
+            threshold: 0.75
+        });
+
+
+
+        observer.observe(first);
+        observer2.observe(second);
+
+        return () => {
+            observer.disconnect(first)
+            observer2.disconnect(second)
+        }
     })
 
 
 
 
     return(
-        <div className="sectionContainer">
+        <div className="sectionContainer"
+             >
 
            <div className={s.textContainer}>
                 <h3 className={s.textHeader}>
@@ -69,10 +91,10 @@ export default function Main() {
                     </p>
                 </div>
 
-                <section className={s.section2}>
+                <div className={s.section2}>
 
-                    <div className={`${s.explainPhoto1} ${animate1 ? s.animatePhotoRight : ' '}`}
-                         ref={photoSection1}>
+                    <div ref={photoSection1}
+                        className={`${s.explainPhoto1} ${animate1 ? s.animatePhotoRight : ' '}`}>
                         <img src={constrImg1}
                             alt="strojarska vyroba, konstrukcie"
                             className={s.constrImg}/>
@@ -82,8 +104,9 @@ export default function Main() {
                         <p>Navaľovací dopravník</p>
                     </div>
 
-                    <div className={`${s.explainPhoto2} ${ animate2 ? s.animatePhotoLeft : ' '}`}
-                         ref={photoSection2}>
+                    <div ref={photoSection2}
+                        className={`${s.explainPhoto2} ${ animate2 ? s.animatePhotoLeft : ' '}`}
+                         >
                         <p>Dopravník</p>
                         <img src={linePoint2}
                              alt="strojarska vyroba, dopravnik"
@@ -93,9 +116,9 @@ export default function Main() {
                             className={s.constrImg}/>
                     </div>
 
-                </section>
+                </div>
 
-                <p>
+                <p className={s.aboutText}>
                     Naša firma pôsobí na trhu už od roku ???. Našou hlavnou zásadou je spokojnosť zákazníkov s našou pracou. Vieme sa prispôsobiť potrebám zákazníka a vždy hľadáme spoločné riešenie. Okrem štandardnej ponuky, sme schopní vyrobiť akékoľvek konštrukcie, aj atypických tvarov. V prípade akýchkoľvek otázok nás neváhajte kontaktovať.
                 </p>
 

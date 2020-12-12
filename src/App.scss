@@ -2,7 +2,7 @@ $font-header: 'Raleway', sans-serif;
 $color-header: #ffffff;
 $font-text: 'Quicksand', sans-serif;
 $color-text: #5d6877;
-
+$color-h3: #3d3d3d;
 
 
 h1 {
@@ -25,7 +25,9 @@ h2 {
 h3 {
   font: {
     size: 2em;
+    family: 'Raleway', sans-serif;
   };
+  color: $color-h3;
 }
 
 p {
