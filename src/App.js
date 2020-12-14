@@ -12,29 +12,36 @@ import Rubber from './Rubber';
 
 function App() {
 
-  const [isHash, setIsHash] = useState()
+  const [startUrl, setStartUrl] = useState(true)
+
+  const findOutUrl = () => {
+    const hash = window.location.href.indexOf('konstrukcie')
+    const hash2 = window.location.href.indexOf('guma');
+    console.log(hash);
+    if (hash !== -1 || hash2 !== -1) {
+      setStartUrl(false)
+    } else setStartUrl(true)
+  }
 
 
   useEffect(() => {
-    const hash = window.location.href.indexOf('konstrukcie');
-    setIsHash(hash)
-  },[isHash]);
+    findOutUrl()
+  },[startUrl]);
 
 
-  const handleOptionClick = (data) => {
-    const hash = window.location.href.indexOf('#');
-    setIsHash(hash)
+  const handleOptionClick = () => {
+    findOutUrl()
   }
 
   const unMountedComp = (data) => {
-    setIsHash(data)
+    setStartUrl(data)
   }
 
 
   return (
     <div className="App">
 
-      { isHash === -1 ? <Intro onClick={ () => handleOptionClick()}/> : null }
+      { startUrl === true ? <Intro onClick={ () => handleOptionClick()}/> : null }
 
 
 

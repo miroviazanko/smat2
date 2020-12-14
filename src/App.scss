@@ -1,7 +1,7 @@
 $font-header: 'Raleway', sans-serif;
 $color-header: #ffffff;
 $font-text: 'Quicksand', sans-serif;
-$color-text: #5d6877;
+$color-text: #7c7b7c;
 $color-h3: #3d3d3d;
 
 
@@ -43,7 +43,34 @@ p {
   width: 60em;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5em;
   font: {
     family: 'Yantramanav', sans-serif;
   }
+}
+
+.fade-enter-active {
+    transition: all 1s;
+}
+.fade-exit-active {
+        transition: all 0s;
+
+}
+
+.fade-enter {
+    opacity: 0;
+
+}
+
+.fade-enter-active {
+    opacity: 1;
+
+}
+
+.fade-exit {
+    opacity: 1;
+}
+.fade-exit-active {
+    opacity: 0;
+
 }
