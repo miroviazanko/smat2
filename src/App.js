@@ -17,7 +17,7 @@ function App() {
   const findOutUrl = () => {
     const hash = window.location.href.indexOf('konstrukcie')
     const hash2 = window.location.href.indexOf('guma');
-    console.log(hash);
+
     if (hash !== -1 || hash2 !== -1) {
       setStartUrl(false)
     } else setStartUrl(true)

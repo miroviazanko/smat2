@@ -63,7 +63,6 @@
 
 
 
-
 @keyframes fromBottom {
     0% { margin-top: 3%; opacity: 0;}
     100% {
@@ -72,9 +71,6 @@
     }
 }
 
-
-
-
  @keyframes pointRight {
      100% {left: -19%}
  }
@@ -82,3 +78,92 @@
  @keyframes pointLeft {
      100% {right: -17%}
  }
+
+
+
+
+
+
+ @media (max-width: 1000px) {
+    .optionContainer1, .optionContainer2 {
+        display: block;
+        margin: 0;
+        width: 30em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .introContainer {
+        h1 {
+            font: {
+                size: 4em;
+            }
+            margin-bottom: 1.2em;
+        }
+        h2 {
+            font: {
+                size: 1.5em;
+            }
+        }
+    }
+    .imageSmat1, .imageSmat2 {
+        width: 15em;
+    }
+    .rightArrow, .leftArrow {
+        top: 25%;
+    }
+}
+
+@media (max-width: 500px) {
+    .introContainer {
+        h1 {
+            font: {
+                size: 3em;
+            }
+        }
+        h2 {
+            font: {
+                size: 1.2em;
+            }
+        }
+    }
+    .imageSmat1, .imageSmat2 {
+        width: 12em;
+    }
+    .rightArrow, .leftArrow {
+        top: 17%;
+        width: 40px;
+    }
+    .optionContainer1, .optionContainer2 {
+        width: 15em;
+        height: 10em;
+    }
+}
+
+@media (max-width: 270px) {
+    .introContainer {
+        h1 {
+            font: {
+                size: 2em;
+            }
+        }
+        h2 {
+            font: {
+                size: 1em;
+            }
+        }
+    }
+    .imageSmat1, .imageSmat2 {
+        width: 10em;
+    }
+    .rightArrow, .leftArrow {
+        top: 15%;
+        width: 40px;
+    }
+    .optionContainer1, .optionContainer2 {
+        width: 14em;
+        height: 10em;
+    }
+}
