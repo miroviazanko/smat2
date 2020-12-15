@@ -49,6 +49,8 @@ p {
   }
 }
 
+
+
 .fade-enter-active {
     transition: all 1s;
 }
@@ -73,4 +75,46 @@ p {
 .fade-exit-active {
     opacity: 0;
 
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1320px) {
+  .sectionContainer {
+    width: 52em;
+  }
+}
+
+
+@media (max-width: 1150px) {
+  .sectionContainer {
+    width: 40em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    width: 90%;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .sectionContainer {
+    width: 95%;
+    margin-top: 3em;
+  }
+  p {
+    font-size: .8em;
+  }
 }

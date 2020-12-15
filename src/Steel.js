@@ -2,8 +2,6 @@ import React, {useEffect} from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-import s from './Steel.module.scss';
-
 import Logo from './components/steel/logo/Logo';
 import Menu from './components/steel/menu/Menu';
 import Introduction from './components/steel/introduction/Introduction';
