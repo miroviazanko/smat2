@@ -98,6 +98,11 @@ p {
   p {
     font-size: 1.2em;
   }
+  h3 {
+    font: {
+      size: 1.8em;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -106,6 +111,11 @@ p {
   }
   p {
     font-size: 1em;
+  }
+  h3 {
+    font: {
+      size: 1.5em;
+    }
   }
 }
 
@@ -116,5 +126,10 @@ p {
   }
   p {
     font-size: .8em;
+  }
+  h3 {
+    font: {
+      size: 1.2em;
+    }
   }
 }
