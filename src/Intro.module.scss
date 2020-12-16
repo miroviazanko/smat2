@@ -24,11 +24,13 @@
 }
 
 .optionContainer1 {
-    animation: fromBottom 1s ease both;
+    -webkit-animation: fromBottom 1s ease both;
+            animation: fromBottom 1s ease both;
     margin-right: 7%;
 }
 .optionContainer2 {
-    animation: fromBottomSlow .5s ease both;
+    -webkit-animation: fromBottomSlow .5s ease both;
+            animation: fromBottomSlow .5s ease both;
     margin-left: 7%;
 }
 
@@ -54,12 +56,24 @@
 
 .rightArrow {
     left: -22%;
-    animation: pointRight 1s cubic-bezier(.47,0,.74,.71) infinite alternate;
+    -webkit-animation: pointRight 1s cubic-bezier(.47,0,.74,.71) infinite alternate;
+            animation: pointRight 1s cubic-bezier(.47,0,.74,.71) infinite alternate;
 }
  .leftArrow {
      right: -20%;
-     animation: pointLeft 1s cubic-bezier(.47,0,.74,.71) infinite alternate;
+     -webkit-animation: pointLeft 1s cubic-bezier(.47,0,.74,.71) infinite alternate;
+             animation: pointLeft 1s cubic-bezier(.47,0,.74,.71) infinite alternate;
  }
+
+
+
+@-webkit-keyframes fromBottom {
+    0% { margin-top: 3%; opacity: 0;}
+    100% {
+        margin-top: 0%;
+        opacity: 1;
+    }
+}
 
 
 
@@ -71,8 +85,16 @@
     }
 }
 
+ @-webkit-keyframes pointRight {
+     100% {left: -19%}
+ }
+
  @keyframes pointRight {
      100% {left: -19%}
+ }
+
+ @-webkit-keyframes pointLeft {
+     100% {right: -17%}
  }
 
  @keyframes pointLeft {
