@@ -55,24 +55,26 @@ function App() {
                   <Route path="konstrukcie"
                         element={ <Steel unMount={ () => unMountedComp()}  />  }>
 
-                        <Route path="/"
-                               element={<Main />} />
-                        <Route path="services"
-                               element={<OurServices />} />
-                        <Route path="contact"
-                               element={<Contact />} />
+                                <Route path="/"
+                                      element={<Main/>} />
+
+                                <Route path="services"
+                                      element={<OurServices />} />
+
+                                <Route path="contact"
+                                        element={<Contact /> } />
                   </Route>
 
 
                   <Route path="guma"
                         element={ <Rubber unMount={ () => unMountedComp()}  />  }>
 
-                        <Route path="/"
-                               element={<MainRubber />} />
-                        <Route path="services"
-                               element={<OurServicesRubber />} />
-                        <Route path="contact"
-                               element={<ContactRubber />} />
+                              <Route path="/"
+                                    element={<MainRubber />} />
+                              <Route path="services"
+                                    element={<OurServicesRubber />} />
+                              <Route path="contact"
+                                    element={<ContactRubber />} />
                   </Route>
 
 

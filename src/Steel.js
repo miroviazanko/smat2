@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { Route, useLocation, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
 import Logo from './components/steel/logo/Logo';
 import Menu from './components/steel/menu/Menu';
@@ -11,9 +11,6 @@ import Footer from './components/steel/footer/Footer';
 
 export default function Steel(props) {
 
-    const loc = useLocation();
-
-    console.log(loc.pathname.split('/')[2]);
 
     useEffect(() => {
         props.unMount(false)
@@ -21,7 +18,6 @@ export default function Steel(props) {
             props.unMount(true)
         }
     })
-
 
 
     return (
