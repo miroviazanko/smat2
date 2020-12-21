@@ -66,7 +66,7 @@ function App() {
                   </Route>
 
 
-                  <Route path="guma"
+                  <Route path="gumarenske-vyrobky"
                         element={ <Rubber unMount={ () => unMountedComp()}  />  }>
 
                               <Route path="/"

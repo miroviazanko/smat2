@@ -45,7 +45,7 @@ export default function Intro(props) {
 
             <div className={s.optionContainer2}
                  onClick={props.onClick}>
-                <NavLink to="/guma">
+                <NavLink to="/gumarenske-vyrobky">
                     <h2>Výroba produktov z gumy</h2>
                     <div className={s.imageSmat2}>
                         <RiArrowRightSFill size="50"

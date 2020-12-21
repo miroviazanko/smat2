@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 
-import { Route, Outlet } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { Outlet } from 'react-router-dom';
 
 import Logo from './components/rubber/logo/Logo';
 import Menu from './components/rubber/menu/Menu';
