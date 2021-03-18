@@ -1,0 +1,115 @@
+.section, .section2{
+    margin: 9em -5%;
+    opacity: 0;
+    img, p {
+        display: inline-block;
+    }
+}
+.sectionImg {
+    width: 50%;
+}
+.linePoint {
+    width: 160px;
+    margin-left: -16px;
+    margin-top: -2px;
+}
+.sectionText {
+    margin-left: 2em;
+    vertical-align: -0.6em;
+}
+
+.linePoint2 {
+    width: 160px;
+}
+.multiPitch {
+    width: 550px;
+    margin-left: -19px;
+}
+.sectionText2 {
+    margin-right: 2em;
+}
+
+.handshakeContainer {
+    border: 1px solid #5d68772e;
+    margin-top: 5em;
+    text-align: center;
+    p {
+        margin: 1em 1em;
+        font-weight: bold;
+    }
+}
+
+
+.animatePhotoUp {
+    -webkit-animation: photoUp 1s ease both;
+            animation: photoUp 1s ease both;
+}
+
+@-webkit-keyframes photoUp {
+    100% {margin-top: 5vw; opacity: 1;}
+}
+
+@keyframes photoUp {
+    100% {margin-top: 5vw; opacity: 1;}
+}
+
+
+@media (max-width: 1320px) {
+    .section, .section2 {
+        text-align: center;
+        .sectionImg, .multiPitch {
+            width: 35vw;
+        }
+        p {
+            font: {
+                size: 1.7vw;
+            }
+         }
+    }
+    .sectionText, .sectionText2 {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1150px) {
+    .linePoint, .linePoint2 {
+        width: 5em;
+    }
+
+    .section, .section2 {
+        margin: 8vw -5%;
+        p {
+            font: {
+                size: 1.6vw;
+            }
+         }
+    }
+    .handshakeIcon {
+        width: 58px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .section, .section2 {
+        .sectionImg, .multiPitch {
+            width: 87vw;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .linePoint, .linePoint2 {
+            display: none;
+        }
+        p {
+            font: {
+                size: 2.2vw;
+            }
+         }
+    }
+    .handshakeIcon {
+        width: 44px;
+    }
+}
+
+

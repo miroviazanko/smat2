@@ -1,0 +1,43 @@
+.smallContainer {
+    text-align: center;
+    p {
+        text-align: center;
+    }
+}
+
+.phoneIcon, .emailIcon, .facebookIcon {
+    vertical-align: -5px;
+}
+.phoneNumber, .email {
+    display: inline-block;
+    margin-left: 1em;
+}
+.facebook {
+    display: inline-block;
+}
+
+.map {
+    box-shadow: 0px 0px 8px -1px #0090cc8f;
+    margin-top: 3em;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .map {
+        width: 90%;
+        height: 60vw;
+    }
+    .phoneIcon, .emailIcon, .facebookIcon {
+        vertical-align: -5px;
+        width: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .phoneIcon, .emailIcon, .facebookIcon {
+        vertical-align: -8px;
+        width: 15px;
+    }
+}

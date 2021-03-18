@@ -1,0 +1,192 @@
+
+
+.textHeader {
+    float: left;
+    margin: 1.2em 1em;
+}
+
+.toolContainer {
+    text-align: right;
+    margin-bottom: 7em;
+}
+
+.toolImg, .toolText {
+    display: inline-block;
+}
+.toolImg {
+    margin-right: 1.5em;
+}
+.toolText {
+    width: 90%;
+}
+
+.section2 {
+    margin: 0 -14%;
+
+    p {
+        display: inline-block;
+        margin: 0 3em;
+    }
+}
+
+.explainPhoto1 {
+    margin-bottom: 5em;
+    text-align: left;
+    margin-left: -10%;
+    opacity: 0;
+}
+
+.explainPhoto2 {
+    text-align: right;
+    margin-right: -10%;
+    opacity: 0;
+}
+
+.animatePhotoRight {
+    -webkit-animation: photoRight 1s ease both;
+            animation: photoRight 1s ease both;
+}
+
+.animatePhotoLeft {
+    -webkit-animation: photoLeft 1s ease both;
+            animation: photoLeft 1s ease both;
+}
+
+
+
+.constrImg {
+    display: inline-block;
+    margin: .3%;
+}
+
+.linePoint, .linePoint2 {
+    display: inline-block;
+    width: 10em;
+
+}
+.linePoint {
+    margin-left: -19px;
+    margin-bottom: 6px;
+}
+.linePoint2 {
+    margin-right: -23px;
+    margin-top: -2px;
+}
+
+.aboutText {
+    margin-top: 5em;
+}
+
+
+@-webkit-keyframes photoRight {
+    100% {margin-left: 0%; opacity: 1;}
+}
+
+
+@keyframes photoRight {
+    100% {margin-left: 0%; opacity: 1;}
+}
+
+@-webkit-keyframes photoLeft {
+    100% {margin-right: 0%; opacity: 1;}
+}
+
+@keyframes photoLeft {
+    100% {margin-right: 0%; opacity: 1;}
+}
+
+
+
+@media (max-width: 1320px) {
+    .explainPhoto1, .explainPhoto2 {
+        text-align: center;
+        img {
+            width: 45vw;
+        }
+        p {
+            margin: 0 .5em;
+        }
+        .linePoint {
+            width: 5em;
+            margin-left: -11px;
+        }
+        .linePoint2 {
+            width: 5em;
+        }
+    }
+    .toolText {
+        width: 86%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .explainPhoto1, .explainPhoto2 {
+        text-align: center;
+        img {
+            width: 42vw;
+        }
+        p {
+            margin: 0 .5em;
+        }
+        .linePoint {
+            width: 5em;
+            margin-left: -11px;
+        }
+        .linePoint2 {
+            width: 5em;
+        }
+    }
+
+    .textHeader {
+        margin-left: 0;
+        margin-top: .5em;
+        font: {
+            size: 1.5em;
+        }
+    }
+    .toolText {
+        width: 80%;
+    }
+    .toolImg {
+        width: 28px;
+        vertical-align: -5px;
+    }
+    .toolContainer {
+        text-align: center;
+        margin-bottom: 4em;
+    }
+    .section2 {
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .textHeader {
+        font: {
+            size: 1.2em;
+        }
+    }
+
+    .toolContainer {
+        margin-bottom: 3em;
+    }
+
+    .explainPhoto1, .explainPhoto2 {
+        img {
+            width: 87vw;
+        }
+    }
+    .explainPhoto1 {
+        margin-bottom: 3em;
+    }
+    .constrImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .linePoint, .linePoint2 {
+        display: none;
+    }
+}

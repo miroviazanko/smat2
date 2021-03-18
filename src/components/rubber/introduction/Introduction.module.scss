@@ -1,0 +1,69 @@
+.introContainer {
+    position: relative;
+}
+
+.companyName {
+    position: absolute;
+    margin: 0;
+    top: .5em;
+    right: 11%;
+}
+
+.backgImage {
+    width: 100%;
+}
+
+.introText {
+    position: absolute;
+    top: 3em;
+    right: 11%;
+    letter-spacing: .025em;
+}
+
+
+@media (max-width: 1300px) {
+    .introContainer {
+        h1 {
+            font: {
+                size: 8vw;
+            }
+        }
+        h2 {
+            font: {
+                size: 3.3vw;
+            }
+        }
+    }
+    .companyName {
+        right: 5%;
+    }
+    .introText {
+        right: 5%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .introContainer {
+        width: 768px;
+        h1 {
+            font: {
+                size: 2.5em;
+            }
+        }
+        h2 {
+            font: {
+                size: 1.1em;
+            }
+        }
+    }
+    .companyName {
+        left: 30vw;
+    }
+    .introText {
+        left: 30vw;
+    }
+}
+
+
+

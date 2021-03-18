@@ -1,0 +1,22 @@
+{
+    "menu": [
+        {
+            "name": "Hlavná stránka",
+            "classMenu": "main",
+            "to": "",
+            "component": "Main"
+        },
+        {
+            "name": "Naše Služby",
+            "classMenu": "ourservice",
+            "to": "services",
+            "component": "OurServices"
+        },
+        {
+            "name": "Kontakt",
+            "classMenu": "contact",
+            "to": "contact",
+            "component": "Contact"
+        }
+    ]
+}

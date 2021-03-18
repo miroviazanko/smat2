@@ -1,0 +1,43 @@
+.logoContainer {
+    width: 300px;
+    display: inline-block;
+}
+
+.logoSmallContainer {
+    position: relative;
+}
+
+.hand {
+    position: absolute;
+    left: 18%;
+    -webkit-animation: turnHand 40s linear 3s infinite;
+            animation: turnHand 40s linear 3s infinite;
+    transform-origin: 125% 50%;
+    z-index: -1;
+}
+
+
+
+@media (max-width: 1200px) {
+    .logoContainer {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .logoContainer {
+        width: 200px;
+    }
+}
+
+@media (max-width: 850px) {
+    .logoContainer {
+        width: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logoContainer {
+        width: 120px;
+    }
+}
